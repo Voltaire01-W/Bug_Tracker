@@ -6,19 +6,16 @@ namespace CSharp
     {
         static void Main(string[] args)
         {
+            var dog = new Animal("bark");
+            dog.Speak();
 
-            int totalNumber = 0;
+            var cat = new Animal("meow");
+            cat.Speak();
 
-            int[] myArray = new int[] {
-                1, 2, 3, 4, 5
-            };
-
-            for (var x = 0; x < myArray.Length; x++) {
-                totalNumber = totalNumber + myArray[x];
-            }
-
-            Console.WriteLine(totalNumber);
-
+            var mouse = new Animal("squeak");
+            mouse.Age = 10;
+            Console.WriteLine(mouse.Age);
+            mouse.Speak();
         }
     }
 }
