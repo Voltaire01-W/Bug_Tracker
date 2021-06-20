@@ -6,16 +6,16 @@ namespace CSharp
     {
         static void Main(string[] args)
         {
-            var dog = new Animal("bark");
-            dog.Speak();
+            while(true) {
+                Console.WriteLine("Enter your name: ");
+                var name = Console.ReadLine();
 
-            var cat = new Animal("meow");
-            cat.Speak();
+                if (name == "") {
+                    throw new Exception("You really screwed this one up. lol");
+                }
 
-            var mouse = new Animal("squeak");
-            mouse.Age = 10;
-            Console.WriteLine(mouse.Age);
-            mouse.Speak();
+                Console.WriteLine("Hello " + name);
+            }
         }
     }
 }

@@ -2,8 +2,7 @@ using System;
 
 namespace CSharp {
 
-    public class Animal {
-
+    public class Animal : IAnimal {
         private string voice;
 
         private int _age;
